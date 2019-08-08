@@ -1,0 +1,103 @@
+WFPGEoNode 2.4.6
+
+  * Now BasicAuthentication with wfpdocs API works smootly
+
+-- Paolo Corti   Wed Oct 28 13:53:28 CET 2015
+
+WFPGEoNode 2.4.5
+
+  * Now static maps are correctly saved with permissions and related objects
+  * Making flake8 happy
+  
+ -- Paolo Corti   Fri Oct 23 17:56:09 CEST 2015
+
+WFPGEoNode 2.4.4
+
+  * Now using GeoNode RC2
+  * Updated installation instructions
+  * Restoring correct configuration in training settings
+  * Now restore works for both env (sdi and training)
+  
+ -- Paolo Corti   Thu Oct 22 17:49:02 CEST 2015
+
+WFPGEoNode 2.4.3
+
+  * Setting a less aggressive cache timeout for #GEONODE-85
+  * Now using geonode rc1
+  * Refactored static maps api: now region and keywords should work correctly
+  * Added a migration script to tag resource with the global region
+  * Using correct setting file
+  * Updating style in a couple of templates
+  * We need to migrate the osm store correctly
+  * Fixed a layer name (supply routes)
+  * Using correct filters in static maps list page
+
+ -- Paolo Corti   Wed Oct 21 17:33:04 CEST 2015
+
+WFPGeoNode 2.4.2
+
+  * Now thumbnail is relative in wfpdocs api as per opweb request
+  * Removing javascript files from WFP project static files, as we use the general ones
+  * Adding categories in layer upload
+  * Restoring the name attribute in gis api as per #GEONODE-87
+  * Version number of static files now is in geonode master. We need only to add it to wfp static ones now
+  * For now we will use geonode from trunk until next official release. Must be installed manually
+  * Updated to latest django-taggit
+  * Updated the search box
+  * Making autocomplete-light happy
+  * Using trunk in dev env and jenkins (that now should be fixed)
+
+ -- Paolo Corti   Tue Oct 20 16:08:51 CEST 2015
+
+WFPGeoNode 2.4.1
+
+  * Removed Bing maps issue
+  * Several design improvement
+  * Hidden the manage style page, as it is now working (#GEONODE-73)
+  * Fixed the training upload page (#GEONODE-70)
+  * Improved carousel responsiveness (#GEONODE-34)
+  * Re-added the mapbox and mapquest base layers
+  * Rearranged filter orders (#GEONODE-41)
+  * Bumped GeoNode 2.4b28
+  * Implemented custom thumbnails (#GEONODE-65)
+
+ -- Paolo Corti   Wed Oct 14 17:57:13 CEST 2015
+
+WFPGeoNode 2.4.0
+
+  * Using standard unforked GeoNode 2.4.0
+
+ -- Paolo Corti   Mon Oct  5 13:55:30 CEST 2015
+
+WFPGeoNode 2.2.10
+
+  * Using WFPGeoNode 2.1.8, fixing a problem with importlayers
+
+ -- Paolo Corti   Thu May 14 14:54:21 CEST 2015
+
+
+WFPGeoNode 2.2.9
+
+  * Using GeoNode 2.1.7 (that fixes metadata upload and add features to
+    importlayers)
+
+ -- Paolo Corti   Tue Apr 21 14:30:53 CEST 2015
+
+
+WFPGeoNode 2.2.8
+
+  * Using GeoNode 2.1.6 (that fixes #GEONODE-31)
+
+ -- Paolo Corti   Wed Apr 15 16:23:25 CEST 2015
+
+
+WFPGeoNode 2.2.6
+
+  * Added the training application, an application to manage trainings within 
+    GeoNode
+  * Added tests for the wfpdocs and training application for continuous
+    integration
+  * Handling text size of abstract and supplemental information in lists and
+    details pages 
+
+ -- Paolo Corti   Tue Mar 10 15:07:03 CET 2015
